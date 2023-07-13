@@ -1,0 +1,66 @@
+/*This contains stylings used to style out webpage*/
+
+div#head, div#result {
+    text-align: center;
+}
+
+h1 {
+    color: dodgerblue;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+h3 {
+    margin-top: -15px;
+    margin-left: 220px;
+    color: limegreen;
+    text-decoration: underline wavy;
+    text-underline-offset: 4px;
+}
+
+fieldset {
+    background: lightgrey;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 18px;
+}
+
+legend {
+    border-width: thin;
+    background: darkgrey;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input {
+    margin-left: 10px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 5px 10px;
+}
+
+input#submit-btn {
+    margin-left: 280px;
+    margin-top: 15px;
+}
+
+div#result {
+    background: lightslategrey;
+    border-radius: 18px;
+    color: white;
+    border-width: 10px;
+    width: fit-content;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 3px;
+    padding: 1px 20px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 25px
+}
+
+ul li {
+    color: navajowhite;
+}
