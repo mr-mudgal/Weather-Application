@@ -1,0 +1,30 @@
+doctype html
+html
+
+    head
+        title Weather App
+        link(rel='stylesheet' href='./stylings/styler.css')
+
+    body
+        div#head
+            h1 Welcome to Weather Application
+            h3 created by Rishabh Mudgal
+            br
+
+        //taking cities as inputs from the user
+        form(method='POST' action='/getWeather')
+            fieldset
+                legend Real-Time Weather
+                label Enter the cities (seperated with comma) :
+                input(type='textarea' name='cities')
+                br
+                input(type='reset' value='Reset')
+                input(id='submit-btn' type='submit' value='Get Weather Information')
+
+        //displaying the result of the fetched weather
+        if(cities.length !== 0)
+            div#result
+                p Result :
+                 ul
+                    each temp, city in info
+                     li #{city} : #{temp}
