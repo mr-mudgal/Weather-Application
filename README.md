@@ -10,6 +10,16 @@ To execute:
 * ```nodemon app.js```, this will execute the project after all the dependencies have been downloaded in the newly created directory (node_modules), which is created automatically by ```npm install``` command.
 * then head over to 'http://localhost:5566/' in your browser to see the pject in the execution.
 
+Home Page!
+<img width="1379" src="https://github.com/user-attachments/assets/a118ccca-be13-464e-9330-b9c5695d922b" />
+
+Result with 1 city!
+<img width="1379" src="https://github.com/user-attachments/assets/2bad1832-024d-49fd-9fe1-9b2e1506a6fa" />
+
+Result with multiple cities!
+<img width="1379" src="https://github.com/user-attachments/assets/d5e7253a-d89a-4d5a-8ef3-aadcd81801f4" />
+
+
 Version - 1.0.0
 Other Details of the project can be found in the package.json file.
 
