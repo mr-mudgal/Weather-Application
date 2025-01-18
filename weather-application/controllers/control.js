@@ -1,3 +1,6 @@
+// load dotenv module
+require('dotenv').config();
+
 // object with city array, storing the cities asked in the query
 let details = {
     cities: []
@@ -29,8 +32,8 @@ const requestinfo = (i, details, res) => {
         url: 'https://weatherapi-com.p.rapidapi.com/current.json',
         qs: {q: details.cities[i]},
         headers: {
-            'X-RapidAPI-Key': 'e3de3d79b3mshdaee8c6807c2f6ap11f97djsnacaef4ef2c08',
-            'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+            'X-RapidAPI-Key': process.env.API_KEY,
+            'X-RapidAPI-Host': process.env.API_HOST
         }
     }
 
@@ -47,12 +50,9 @@ const requestinfo = (i, details, res) => {
 
              //assigning the result to the weather object to transfer it to the webpage
              Object.assign(weathers.weather, tempW)
-             console.log(weathers)
 
              // if all the cities are being called by the API, render the webpage and display the result
              if (i === details.cities.length - 1) {
-                 console.log(details)
-                 console.log(weathers)
                  res.render('index', {cities: details.cities, info: weathers.weather})
                  weathers.weather = {} // emptying the variables so that they are clear for the next cities information
                  tempW.length = 0
